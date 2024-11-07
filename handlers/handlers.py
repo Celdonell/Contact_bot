@@ -80,7 +80,8 @@ async def uncorrect_receive_phone_number(message: Message):
 async def sending(message: Message, state: FSMContext):
     data = await state.get_data()
     await state.clear()
-    await bot.send_message(chat_id=1748203595, text=f'Получено новое сообщение\n\n{data["message"]}\n\n{data["contact"]}')
+    await bot.send_message(chat_id=0000000000, text=f'Получено новое сообщение\n\n{data["message"]}\n\n{data["contact"]}') 
+    # вместо нулей айди юзера, которому пишем
     await session.close()
     await message.answer('Сообщение успешно отправлено', reply_markup=ReplyKeyboardRemove())
 
