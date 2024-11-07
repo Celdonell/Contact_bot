@@ -1,0 +1,2 @@
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+contacts = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text='Email', callback_data='sendcont_email'), InlineKeyboardButton(text='Номер', callback_data='sendcont_phone')]])
